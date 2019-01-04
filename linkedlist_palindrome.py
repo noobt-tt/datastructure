@@ -1,23 +1,24 @@
 '''
 判断是否是回文字符串
+dd
 '''
 
 def reverse(slow):
     pre = None
-	while solw:
-		tmp = slow.next
-		slow.next = pre
-		pre = slow
-		slow = tmp
-	return pre
+    while solw:
+        tmp = slow.next
+        slow.next = pre
+        pre = slow
+        slow = tmp
+    return pre
 
 def is_palindrome(l):
-	l.print_all()
-	fast = l.__head
-	slow = l.__head
-	while fast.next:
-		fast = fast.next.next
-		slow = slow.next
+    l.print_all()
+    fast = l.__head
+    slow = l.__head
+    while fast.next:
+        fast = fast.next.next
+        slow = slow.next
 
 	end_node = reverse(slow)
 	start_node = l.__head
