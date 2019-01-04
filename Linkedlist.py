@@ -143,7 +143,7 @@ class SinglyLinkedList():
     	return(pre, node)
 
     def reversed_self(self):
-    	SinglyLinkedList
+    	
     	
     
 
