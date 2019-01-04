@@ -134,6 +134,16 @@ class SinglyLinkedList():
     		print(str(pos.data)+'--->',end='')
     		pos = pos.next
 
+    def _reversed_with_two_node(self, pre, node):
+    	'''翻转相邻两个节点'''
+    	tmp = node.next
+    	node.next = pre
+    	pre = node
+    	node = tmp
+    	return(pre, node)
+
+    def reversed_self(self):
+    	
     
 
 
