@@ -1,6 +1,5 @@
 '''
 判断是否是回文字符串
-还没有运行过
 '''
 from SinglyLinkedList import Node
 from SinglyLinkedList import SinglyLinkedList
