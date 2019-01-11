@@ -4,7 +4,7 @@
 from typing import Optional
 
 class Node():
-	def __init__(self, data:int, next=None):
+	def __init__(self, data:str, next=None):
 		self.data = data
 		self._next = next
 
@@ -40,16 +40,16 @@ class linked_Queue():
 			current = current._next
 		return "->".join(value for value in values)
 
-	if __name__=="__main__":
-		q = linked_Queue()
-		for i in range(10):
-			q.enqueue(str(i))
-		print(q)
+if __name__=="__main__":
+	q = linked_Queue()
+	for i in range(10):
+		q.enqueue(str(i))
+	print(q)
 
-		for i in range(3):
-			q.dequeue()
-		print(q)
+	for i in range(3):
+		q.dequeue()
+	print(q)
 
-		q.enqueue("7")
-		q.enqueue("8")
-		print(q)
+	q.enqueue("7")
+	q.enqueue("8")
+	print(q)
