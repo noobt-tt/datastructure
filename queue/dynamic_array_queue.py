@@ -4,7 +4,7 @@
 from typing import Optional
 class DynamicArrayQueue:
 	def __init__(self, capacity:int):
-		self._items = []
+        self._items = []
 		self._capacity = capacity
 		self._head = 0
 		self._tail = 0
