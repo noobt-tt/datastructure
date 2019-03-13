@@ -1,10 +1,11 @@
 '''
 判断是否是回文字符串
 '''
+from SinglyLinkedList import SinglyLinkedList
 
 def reverse(slow):
     pre = None
-    while solw:
+    while slow:
         tmp = slow.next
         slow.next = pre
         pre = slow

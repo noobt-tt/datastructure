@@ -2,8 +2,9 @@
 基本操作
 查找，插入，删除，翻转，检查是否有环
 '''
-class Node():
-    def __init__(self,data,next=None):
+from typing import Optional
+class Node:
+    def __init__(self, data:int, next=None):
         self.__data = data
         self.__next = next
     def data(self):
@@ -14,20 +15,22 @@ class Node():
         return self._next
     def next(self,next):
         self.__next = next
-class SinglyLinkedList():
+        
+class SinglyLinkedList:
     def __init__(self):
         self.__head = None
+        
     def find_by_value(self, value):
         '''按照数据值查找'''
         node = self.__head
-        while node!=None and node.data!=value:
+        while node and node.data!=value:
             node = node.next
         return node
 
     def find_by_index(self, index):
         node = self.__head
         pos = 0
-        while node!=None and pos!=index:
+        while node and pos!=index:
             node = node.next
             pos += 1
         return node
@@ -94,7 +97,7 @@ class SinglyLinkedList():
     	node = self.__head.next
     	not_find = False
     	while node.data != value:
-    		if node==None:
+    		if node.next==None:
     			not_find = True
     			break
     		else:
@@ -131,7 +134,7 @@ class SinglyLinkedList():
     def print_all(self):
     	'''打印链表'''
     	if self.__head == None:
-    		pritn('当前链表是空哒！')
+    		print('当前链表是空哒！')
     		return
     	pos = self.__head
     	while pos!=None:
@@ -167,8 +170,7 @@ class SinglyLinkedList():
     		if fast == slow:
     			return True
     	return False
-
-    
+  
 
 
 
